@@ -39,6 +39,7 @@
 	width: 47%;
 	display: flex;
 	gap: 0.9rem;
+	overflow: hidden;
 }
 
 #date {
@@ -51,6 +52,10 @@
 
 .profile-stats-value {
 	font-weight: var(--font-bold);
+}
+
+.text-grayscale {
+	color: var(--lightGray) !important;
 }
 
 /* ============== THEME ================ */
@@ -113,6 +118,10 @@
 	#date,
 	#user {
 		font-size: 0.8rem;
+	}
+
+	#name {
+		font-size: 1.1rem;
 	}
 }
 

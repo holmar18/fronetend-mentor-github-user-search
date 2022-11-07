@@ -9,7 +9,7 @@ import { useThemeContext } from '../../context/ThemeContext';
 import { GITHUBSEARCH } from '../../constants/constants';
 
 const SearchInput = () => {
-	const { userName, setUserName, FechUser } = useGithubSearchContext();
+	const { userName, handleInput, FechUser } = useGithubSearchContext();
 	const { theme } = useThemeContext();
 
 	return (
@@ -21,7 +21,7 @@ const SearchInput = () => {
 				type='search'
 				name='user-input'
 				placeholder={GITHUBSEARCH.searchPlaceholder}
-				onChange={(e) => setUserName(e.target.value)}
+				onChange={(e) => handleInput(e.target.value)}
 			/>
 			<div className='btn-container'>
 				<button onClick={() => FechUser()}>{GITHUBSEARCH.btnSearch}</button>
