@@ -31,17 +31,23 @@ Vantar:
 
 #### Desktop version
 
-<img src="./src/assets/design/mine/desktop-home.jpg" />
+<img src="./design/mine/my-desktop-dark.jpg" />
+<br>
+<img src="./design/mine/my-desktop-light.jpg" />
 <br><br>
 
 #### Tablet version
 
-<img src="./src/assets/design/mine/tablet-home.jpg" />
+<img src="./design/mine/my-tablet-dark.jpg" />
+<br>
+<img src="./design/mine/my-tablet-light.jpg" />
 <br><br>
 
 #### Mobile version
 
-<img src="./src/assets/design/mine/mobile-home.jpg" />
+<img src="./design/mine/my-mobile-dark.jpg" />
+<br>
+<img src="./design/mine/my-mobile-light.jpg" />
 <br>
 
 ---
@@ -50,17 +56,17 @@ Vantar:
 
 #### Desktop version
 
-<img src="./src/assets/design/or/Desktop-Home.jpg" />
+<img src="./design/original/desktop.jpg" />
 <br><br>
 
 #### Tablet version
 
-<img src="./src/assets/design/or/Tablet-Home.png" />
+<img src="./design/original/tablet.jpg" />
 <br><br>
 
 #### Mobile version
 
-<img src="./src/assets/design/or/Mobile-Home.png" />
+<img src="./design/original/mobile.jpg" />
 <br>
 
 ---
