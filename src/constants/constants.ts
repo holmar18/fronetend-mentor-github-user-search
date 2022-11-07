@@ -9,6 +9,7 @@ export const GITHUBSEARCH = {
 	bio: 'This profile has no bio',
 	notFound: 'Not available',
 	stats: ['Repos', 'Followers', 'Following'],
+	error: 'Not Found',
 };
 
 export const DEFAULTDATA = {

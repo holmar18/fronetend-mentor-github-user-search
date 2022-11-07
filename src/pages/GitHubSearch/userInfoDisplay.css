@@ -123,6 +123,9 @@
 	#name {
 		font-size: 1.1rem;
 	}
+	.footer-item {
+		width: 87%;
+	}
 }
 
 /* ==============  TABLET ============== */
@@ -151,6 +154,10 @@
 	#date,
 	#user {
 		font-size: 0.9rem;
+	}
+
+	.footer-item {
+		width: 47%;
 	}
 }
 
@@ -182,5 +189,9 @@
 	#date,
 	#user {
 		font-size: 0.9rem;
+	}
+
+	.footer-item {
+		width: 47%;
 	}
 }

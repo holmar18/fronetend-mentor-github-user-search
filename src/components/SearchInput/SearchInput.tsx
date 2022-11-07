@@ -9,13 +9,14 @@ import { useThemeContext } from '../../context/ThemeContext';
 import { GITHUBSEARCH } from '../../constants/constants';
 
 const SearchInput = () => {
-	const { userName, handleInput, FechUser } = useGithubSearchContext();
+	const { userName, error, handleInput, FechUser } = useGithubSearchContext();
 	const { theme } = useThemeContext();
 
 	return (
 		<div className='search-container'>
 			<BiSearchAlt2 className='search-icon' />
 			<input
+				id='git-search'
 				className={`${theme}-input`}
 				value={userName}
 				type='search'
@@ -23,6 +24,7 @@ const SearchInput = () => {
 				placeholder={GITHUBSEARCH.searchPlaceholder}
 				onChange={(e) => handleInput(e.target.value)}
 			/>
+			{error ? <h4 className='error-msg'>{GITHUBSEARCH.error}</h4> : null}
 			<div className='btn-container'>
 				<button onClick={() => FechUser()}>{GITHUBSEARCH.btnSearch}</button>
 			</div>

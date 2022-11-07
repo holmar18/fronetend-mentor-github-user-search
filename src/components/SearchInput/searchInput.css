@@ -106,6 +106,16 @@
 	color: var(--white);
 }
 
+.error-msg {
+	color: rgba(226, 47, 47, 1);
+	font-weight: var(--font-bold);
+}
+
+#git-search:-webkit-autofill,
+#git-search:focus:-webkit-autofill {
+	border-radius: 1rem;
+}
+
 /* ==============  MOBILE ============== */
 @media only screen and (max-width: 600px) {
 	.search-container input {
@@ -115,6 +125,16 @@
 	.light-input,
 	.dark-input {
 		font-size: 0.8rem;
+	}
+
+	.error-msg {
+		position: absolute;
+	}
+
+	.error-msg {
+		position: absolute;
+		right: 0;
+		top: -1.8rem;
 	}
 }
 
@@ -128,6 +148,12 @@
 	.dark-input {
 		font-size: 0.9rem;
 	}
+
+	.error-msg {
+		position: absolute;
+		right: 0;
+		top: -2rem;
+	}
 }
 
 /* ==============  DESKTOP ============== */
@@ -139,5 +165,9 @@
 	.light-input,
 	.dark-input {
 		font-size: 1rem;
+	}
+
+	.error-msg {
+		margin-left: 0.6rem;
 	}
 }

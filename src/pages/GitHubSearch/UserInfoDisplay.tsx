@@ -1,7 +1,5 @@
-import React, { FunctionComponent } from 'react';
+import { FunctionComponent } from 'react';
 import './userInfoDisplay.css';
-// img
-import defImg from '../../assets/octacat.png';
 // Icons
 import { MdLocationPin } from 'react-icons/md';
 import { BiLink } from 'react-icons/bi';
@@ -14,6 +12,13 @@ import { useGithubSearchContext } from '../../context/GithubSearchContext';
 import { GITHUBSEARCH } from '../../constants/constants';
 // Utils
 import { notAvailable, format, formatDate } from '../../utils';
+
+const icon = [
+	<MdLocationPin />,
+	<BiLink />,
+	<BsTwitter />,
+	<HiBuildingOffice2 />,
+];
 
 const UserInfoDisplay: FunctionComponent<{}> = (): JSX.Element => {
 	const { theme } = useThemeContext();
@@ -39,7 +44,7 @@ const UserInfoDisplay: FunctionComponent<{}> = (): JSX.Element => {
 				{/* PROFILE IMG */}
 				<img
 					src={userData?.avatar_url}
-					alt='Github user photo'
+					alt='Github user'
 					className='profile-img'
 				/>
 				{/* PROFILE IMG - END */}
@@ -73,7 +78,7 @@ const UserInfoDisplay: FunctionComponent<{}> = (): JSX.Element => {
 				{/* REPOS, FOLLOWERS, FOLLOWING */}
 				{stats.map((stat, i) => {
 					return (
-						<div className='profile-stats'>
+						<div id={stat} className='profile-stats'>
 							<p className={`${theme}-p-p profile-stats-title`}>
 								{GITHUBSEARCH.stats[i]}
 							</p>
@@ -87,12 +92,13 @@ const UserInfoDisplay: FunctionComponent<{}> = (): JSX.Element => {
 			{/* FOOTER */}
 			<div className='profile-footer-container'>
 				{/* LOCATION, BLOG, TWITTER, COMPANY */}
-				{footer.map((item) => {
+				{footer.map((item, i) => {
 					return (
-						<div className={`${theme}-p-p ${notAvailable(item)} footer-item`}>
-							<div className='footer-item-icon'>
-								<MdLocationPin />
-							</div>
+						<div
+							id={item}
+							className={`${theme}-p-p ${notAvailable(item)} footer-item`}
+						>
+							<div className='footer-item-icon'>{icon[i]}</div>
 							<p>{format(item)}</p>
 						</div>
 					);

@@ -16,6 +16,7 @@ import { DEFAULTDATA } from '../../constants/constants';
 type GithubSearchType = {
 	userName: string;
 	userData: any;
+	error: boolean;
 	handleInput: Function;
 	FechUser: Function;
 };
@@ -28,6 +29,7 @@ interface ITheme {
 export const GithubSearch = createContext<GithubSearchType>({
 	userName: '',
 	userData: null,
+	error: false,
 	handleInput: Function,
 	FechUser: Function,
 });
@@ -58,6 +60,8 @@ export const GithubSearchContext: FunctionComponent<ITheme> = ({
 				setUserData(CB);
 				// remove value from the search input
 				setUserName('');
+			} else {
+				setError(true);
 			}
 		});
 	};
@@ -73,6 +77,7 @@ export const GithubSearchContext: FunctionComponent<ITheme> = ({
 			value={{
 				userName: userName,
 				userData: userData,
+				error: error,
 				handleInput: handleInput,
 				FechUser: FechUser,
 			}}
