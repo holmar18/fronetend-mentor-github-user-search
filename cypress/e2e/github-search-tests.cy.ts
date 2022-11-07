@@ -28,7 +28,8 @@ describe('Test searching for user holmar18', () => {
 
 		cy.get('button').click();
 
-		cy.wait(2000);
+		// wait 10 seconds
+		cy.wait(10000);
 
 		cy.get('.error-msg').contains('Not Found');
 	});
