@@ -1,0 +1,29 @@
+.light-card {
+	background: var(--card-bg-lightWhite);
+	filter: drop-shadow(0px 16px 30px rgba(70, 96, 187, 0.2));
+}
+
+.dark-card {
+	background: var(--card-bg-darkBlue);
+	filter: drop-shadow(-3px 5px 13px rgba(24, 25, 29, 0.7));
+}
+
+.card-container {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	border-radius: 1rem;
+	padding: 0.7rem;
+}
+
+/* ==============  MOBILE ============== */
+@media only screen and (max-width: 600px) {
+}
+
+/* ==============  TABLET ============== */
+@media only screen and (min-width: 601px) and (max-width: 1007px) {
+}
+
+/* ==============  DESKTOP ============== */
+@media only screen and (min-width: 1008px) {
+}

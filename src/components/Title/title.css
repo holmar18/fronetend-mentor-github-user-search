@@ -1,0 +1,28 @@
+.light {
+	color: var(--text-light);
+}
+
+.dark {
+	color: var(--white);
+}
+
+/* ==============  MOBILE ============== */
+@media only screen and (max-width: 600px) {
+	.title {
+		font-size: 2rem;
+	}
+}
+
+/* ==============  TABLET ============== */
+@media only screen and (min-width: 601px) and (max-width: 1007px) {
+	.title {
+		font-size: 2.5rem;
+	}
+}
+
+/* ==============  DESKTOP ============== */
+@media only screen and (min-width: 1008px) {
+	.title {
+		font-size: 3rem;
+	}
+}

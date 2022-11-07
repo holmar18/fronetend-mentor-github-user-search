@@ -1,0 +1,36 @@
+.dark-body-container {
+	background: var(--main-bg-darkBlue);
+}
+
+.light-body-container {
+	background: var(--main-bg-lighGray);
+}
+
+.body-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ==============  MOBILE ============== */
+@media only screen and (max-width: 600px) {
+	.main-inner-container {
+		width: 85vw;
+	}
+}
+
+/* ==============  TABLET ============== */
+@media only screen and (min-width: 601px) and (max-width: 1007px) {
+	.main-inner-container {
+		width: 40rem;
+	}
+}
+
+/* ==============  DESKTOP ============== */
+@media only screen and (min-width: 1008px) {
+	.main-inner-container {
+		width: 50rem;
+	}
+}
