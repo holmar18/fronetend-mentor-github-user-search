@@ -1,0 +1,177 @@
+.profile-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin-left: auto;
+	width: 37rem;
+	gap: 1.2rem;
+	padding: 2rem;
+}
+
+.profile-header-container {
+	display: flex;
+}
+
+.profile-user-container {
+	display: flex;
+}
+
+.profile-img {
+	position: absolute;
+	border-radius: 50%;
+}
+
+.profile-stats-container {
+	display: flex;
+	justify-content: space-between;
+	border-radius: 1rem;
+	padding: 1rem 1.9rem;
+}
+
+.profile-footer-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1.3rem;
+}
+
+.footer-item {
+	width: 47%;
+	display: flex;
+	gap: 0.9rem;
+}
+
+#date {
+	margin-top: 0.4rem;
+}
+
+#user {
+	color: var(--midBlue);
+}
+
+.profile-stats-value {
+	font-weight: var(--font-bold);
+}
+
+/* ============== THEME ================ */
+
+/* LIGHT */
+.light-s-c {
+	background: var(--main-bg-lighGray);
+}
+
+.light-p-t {
+	color: var(--text-black);
+}
+
+.light-p-p {
+	color: var(--darkGray);
+}
+
+.light-p-s {
+	color: var(--text-black);
+}
+
+/* LIGHT - END */
+
+/* DARK */
+.dark-s-c {
+	background: var(--main-bg-darkBlue);
+}
+
+.dark-p-t,
+.dark-p-p,
+.dark-p-s {
+	color: var(--white);
+}
+
+/* DARK - END */
+
+/* ==============  MOBILE ============== */
+@media only screen and (max-width: 600px) {
+	.profile-user-container {
+		flex-direction: column;
+	}
+
+	.profile-user-container {
+		margin-left: 10rem;
+	}
+
+	.profile-footer-container {
+		flex-direction: column;
+	}
+
+	.profile-img {
+		left: 3rem;
+		top: 2rem;
+		width: 6rem;
+	}
+
+	.profile-stats-title,
+	.footer-item,
+	#bio,
+	#date,
+	#user {
+		font-size: 0.8rem;
+	}
+}
+
+/* ==============  TABLET ============== */
+@media only screen and (min-width: 601px) and (max-width: 1007px) {
+	.profile-user-container {
+		flex-direction: column;
+	}
+
+	.profile-user-container {
+		margin-left: 10rem;
+	}
+
+	.profile-img {
+		left: 4rem;
+		top: 2rem;
+		width: 6.5rem;
+	}
+
+	.profile-stats-title {
+		font-size: 0.9rem;
+	}
+
+	.profile-stats-title,
+	.footer-item,
+	#bio,
+	#date,
+	#user {
+		font-size: 0.9rem;
+	}
+}
+
+/* ==============  DESKTOP ============== */
+@media only screen and (min-width: 1008px) {
+	.profile-user-container {
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.profile-container {
+		width: 37rem;
+	}
+
+	.profile-img {
+		left: 3.5rem;
+		top: 2.5rem;
+		width: 7rem;
+	}
+
+	.profile-stats-title {
+		font-size: 1rem;
+	}
+
+	.profile-stats-title,
+	.footer-item,
+	#bio,
+	#date,
+	#user {
+		font-size: 0.9rem;
+	}
+}

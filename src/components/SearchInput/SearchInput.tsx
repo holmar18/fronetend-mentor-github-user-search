@@ -24,7 +24,7 @@ const SearchInput = () => {
 				onChange={(e) => setUserName(e.target.value)}
 			/>
 			<div className='btn-container'>
-				<button onClick={() => FechUser()}>Search</button>
+				<button onClick={() => FechUser()}>{GITHUBSEARCH.btnSearch}</button>
 			</div>
 		</div>
 	);

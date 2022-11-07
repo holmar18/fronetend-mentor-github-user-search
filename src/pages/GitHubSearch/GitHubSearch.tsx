@@ -1,27 +1,32 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 // style
 import './githubSearch.css';
 // Components
-import { LayoutMain } from '../../components/Layout';
-import { ThemeToggler } from '../../components/ThemeToggler';
-import { Title } from '../../components/Title';
+import { LayoutMain } from '../../components/Layout/LayoutMain';
 import { Card } from '../../components/Card';
 import { SearchInput } from '../../components/SearchInput';
+import { ThemeToggler } from '../../components/ThemeToggler';
+import { Title } from '../../components/Title';
+import { Header } from '../../components/Layout/Header';
+import { UserInfoDisplay } from './UserInfoDisplay';
 // Context
 import { ThemeContextProvider } from '../../context/ThemeContext';
 import { GithubSearchContext } from '../../context/GithubSearchContext';
 
-const GitHubSearch = () => {
+const GitHubSearch: FunctionComponent<{}> = (): JSX.Element => {
 	return (
 		<ThemeContextProvider>
 			<GithubSearchContext>
 				<LayoutMain>
-					<section className='themeToggler-container'>
+					<Header>
 						<Title text='devfinder' />
 						<ThemeToggler />
-					</section>
+					</Header>
 					<Card>
 						<SearchInput />
+					</Card>
+					<Card>
+						<UserInfoDisplay />
 					</Card>
 				</LayoutMain>
 			</GithubSearchContext>

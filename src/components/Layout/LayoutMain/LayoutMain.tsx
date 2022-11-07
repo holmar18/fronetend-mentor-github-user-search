@@ -1,7 +1,7 @@
 import React, { ReactNode, FunctionComponent } from 'react';
 import './layout.css';
 // Context
-import { useThemeContext } from '../../context/ThemeContext';
+import { useThemeContext } from '../../../context/ThemeContext';
 
 interface Ilayout {
 	children: ReactNode | ReactNode[];

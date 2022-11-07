@@ -17,6 +17,7 @@
 	font-family: var(--font-title);
 	border: 0;
 	cursor: pointer;
+	font-weight: var(--font-bold);
 }
 
 .search-container button:hover {
@@ -31,12 +32,12 @@
 
 .search-icon {
 	color: var(--midBlue);
-	font-size: 2rem;
+	font-size: 1.7rem;
+	margin-left: 0.5rem;
 }
 
 .light-input {
 	color: var(--text-light);
-	font-size: 1rem;
 }
 
 .light-input::-webkit-input-placeholder {
@@ -72,7 +73,6 @@
 
 .dark-input {
 	color: var(--white);
-	font-size: 1rem;
 }
 
 .dark-input::-webkit-input-placeholder {
@@ -111,18 +111,33 @@
 	.search-container input {
 		width: 70%;
 	}
+
+	.light-input,
+	.dark-input {
+		font-size: 0.8rem;
+	}
 }
 
 /* ==============  TABLET ============== */
 @media only screen and (min-width: 601px) and (max-width: 1007px) {
 	.search-container input {
-		width: 60%;
+		width: 70%;
+	}
+
+	.light-input,
+	.dark-input {
+		font-size: 0.9rem;
 	}
 }
 
 /* ==============  DESKTOP ============== */
 @media only screen and (min-width: 1008px) {
 	.search-container input {
-		width: 50%;
+		width: 65%;
+	}
+
+	.light-input,
+	.dark-input {
+		font-size: 1rem;
 	}
 }

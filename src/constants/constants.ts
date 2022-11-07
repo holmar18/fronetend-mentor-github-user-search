@@ -3,4 +3,5 @@ export const GITHUBSEARCH = {
 	dark: 'Dark',
 	mainTitle: 'devfinder',
 	searchPlaceholder: 'Search GitHub username...',
+	btnSearch: 'Search',
 };
